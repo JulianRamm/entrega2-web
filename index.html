@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content=" Equipo 3 - programación con tecnologias web 2020-2"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Ensures optimal rendering on mobile devices. -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Optimal Internet Explorer compatibility -->
+    <title>Donarte</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Navegación -->
+    <nav
+      id="nav"
+      class="navbar navbar-expand-xl navbar-light bg-light fixed-top"
+    >
+      <a id="navbar-brand" class="navbar-brand ml-5" href="index.html"
+        >DONARTE</a
+      >
+      <div
+        class="collapse navbar-collapse justify-content-center"
+        id="navbarNav"
+      >
+        <ul class="navbar-nav ml-5 mr-5" id="nav-menu">
+          <li><a class="nav-link" href="#Us">Nosotros</a></li>
+          <li><a class="nav-link" href="#Who">A quién ayudamos</a></li>
+          <li><a class="nav-link" href="#Testimonies">Testimonios</a></li>
+          <li><a class="nav-link" href="#Report">Reporta Personas </a></li>
+        </ul>
+      </div>
+      <div class="ml-5 mr-5">
+        <img id="user-logo" src="./img/user.svg" class="user-logo" />
+        <span id="user-name" class="mr-2"></span>
+        <img
+          id="logout"
+          src="./img/logout.svg"
+          class="user-logo pointer"
+          onclick="handleLogOut()"
+        />
+        <a id="ingresarbtn" class="btn btn-primary" href="#Login">Ingresar</a>
+        <a id="donarNav" class="btn btn-primary" href="#Donar">Donar</a>
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </nav>
+
+    <!-- BANNER -->
+    <header id="banner" class="masthead text-white text-center">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <h1 class="mb-5">
+              Bienvenidos a Donarte, la mejor opción para ayudar!
+            </h1>
+          </div>
+          <div class="col-md-10 col-lg-8 col-xl-7 mx-auto"></div>
+        </div>
+      </div>
+    </header>
+    <!-- acerca de nosotros -->
+    <h1><a name="Us"></a></h1>
+    <section class="features-icons bg-light text-center" id="aboutUs">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="container features-icons-icon d-flex">
+                <img src="img/icon about.png" alt="" />
+              </div>
+              <h3>Quienes Somos!</h3>
+              <p class="lead mb-0">
+                Donarte es una empresa colombiana, fundadada por estudiantes de
+                los Andes!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+              <div class="container features-icons-icon d-flex">
+                <img src="img/Icon 2.png" alt="" />
+              </div>
+              <h3>Que hacemos!</h3>
+              <p class="lead mb-0">
+                Ofrecemos un canal efectivo de donaciones a personas y
+                fundaciones!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+              <div class="container features-icons-icon d-flex">
+                <img src="img/ICON3.png" alt="" />
+              </div>
+              <h3>Como lo hacemos!</h3>
+              <p class="lead mb-0">
+                Con tu ayuda localizamos a las personas y fundaciones más
+                necesitadas!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+    </section>
+
+    <h1><a name="Who"></a></h1>
+    <!-- A quién ayudamos-->
+    <section class="text-center" id="who">
+      <h1>A quién ayudamos!</h1>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="p-5">
+              <img
+                class="img-fluid rounded-circle"
+                src="img/PEXELS2.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="p-5">
+              <h2 class="display-4">Fundaciones</h2>
+              <p>
+                Con donarte puedes ayudar donando a las fundaciones que se han
+                registrado en nuestro sistema. También ayudamos a las
+                fundaciones a contactar a las personas más necesitadas a lo
+                largo del país. Regístrate ahora y ayúdanos a beneficiar a
+                cientos de personas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2">
+            <div class="p-5">
+              <img
+                class="img-fluid rounded-circle"
+                src="img/PEXELS1.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="p-5">
+              <h2 class="display-4">Personas</h2>
+              <p>
+                Con donarte también puedes ayudar a las personas que más lo
+                necesitan directamente. No hay necesidad de una organización
+                intermediaria. Ayúdanos a encontrar mas personas necesitadas,
+                reporta alguna que conozcas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonios -->
+    <a name="Testimonies"></a>
+    <section class="testimonials text-center bg-light" id="testimonies">
+      <div class="container">
+        <h2 class="mb-5">Personas que hemos ayudado...</h2>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img
+                class="img-fluid rounded-circle mb-3"
+                src="img/PEXELS3.jpg"
+                alt=""
+              />
+              <h5>Juan E.</h5>
+              <p class="font-weight-light mb-0">
+                "¡Gracias Donarte! Me ayudaron cuando nadie mas lo hizo"
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img
+                class="img-fluid rounded-circle mb-3"
+                src="img/PEXELS4.jpg"
+                alt=""
+              />
+              <h5>Sara R.</h5>
+              <p class="font-weight-light mb-0">
+                "¡Donarte me contactó y me brindó alimentos y ropa!"
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+              <img
+                class="img-fluid rounded-circle mb-3"
+                src="img/PEXELS5.jpg"
+                alt=""
+              />
+              <h5>Pedro C.</h5>
+              <p class="font-weight-light mb-0">
+                "¡Donarte es amor puro! ¡Muchas gracias!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- login-->
+    <section id="Login" hidden>
+      <div class="container login-container">
+        <a name="Login"></a>
+        <div class="row">
+          <div class="col-md-6 align-items-center login-form-1">
+            <h3>Hola! Bienvenido de nuevo</h3>
+            <form onsubmit="handleLogIn()" id="login-form">
+              <div class="form-group">
+                <input
+                  id="login-email"
+                  type="email"
+                  class="form-control"
+                  placeholder="Correo *"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  id="login-password"
+                  type="password"
+                  class="form-control"
+                  placeholder="Contraseña *"
+                  value=""
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  id="loginbtn"
+                  class="btnSubmit btn btn-primary btn-block"
+                  value="Ingresar"
+                />
+              </div>
+              <div class="form-group">
+                <a href="#" class="ForgetPwd">Olvidaste tu contraseña?</a>
+              </div>
+              <div class="form-group">
+                <a id="registerLink" class="ForgetPwd" href="#Registro"
+                  >Registrate Aqui</a
+                >
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGISTRO-->
+    <section id="register" hidden>
+      <div class="card bg-light" id="registerdiv">
+        <article class="card-body mx-auto" style="max-width: 400px">
+          <a name="Registro"></a>
+          <h4 class="card-title mt-3 text-center">Crea tu cuenta</h4>
+          <p class="text-center">y empieza a donar!</p>
+
+          <form id="form-registro" onsubmit="handleSignUp(); return false;">
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input
+                name="name"
+                class="form-control"
+                placeholder="Nombre"
+                type="text"
+                required
+              />
+              <input
+                name="lastname"
+                class="form-control"
+                placeholder="Apellido"
+                type="text"
+                required
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <input
+                name="email"
+                class="form-control"
+                placeholder="Correo Electrónico"
+                type="email"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-phone"></i>
+                </span>
+              </div>
+              <select class="custom-select" style="max-width: 120px">
+                <option selected="">+57 1</option>
+                <option value="1">+57 2</option>
+                <option value="2">+57 3</option>
+                <option value="3">+57 4</option>
+                <option value="3">+57 5</option>
+                <option value="3">+57 6</option>
+                <option value="3">+57 7</option>
+                <option value="3">+57 8</option>
+              </select>
+              <input
+                name="phone"
+                class="form-control"
+                placeholder="Número de Teléfono"
+                type="text"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-building"></i>
+                </span>
+              </div>
+              <select class="form-control">
+                <option selected="">Seleccione el tipo de usuario</option>
+                <option>Fundación</option>
+                <option>Persona Natural</option>
+              </select>
+            </div>
+            <!-- form-group end.// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <input
+                name="password"
+                class="form-control"
+                placeholder="Create password"
+                type="password"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <input
+                class="form-control"
+                placeholder="Repeat password"
+                type="password"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">
+                Registrame
+              </button>
+            </div>
+            <!-- form-group// -->
+            <p class="text-center">
+              Ya tienes una cuenta?
+              <a href="#Login" id="IniciarSesionLink">Inicia sesion </a>
+            </p>
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- Donación-->
+    <section id="donation">
+      <a name="Donar"></a>
+      <div class="card bg-light" id="donationDiv">
+        <article class="card-body mx-auto" style="max-width: 400px">
+          <a name="Registro"></a>
+          <h4 class="card-title mt-3 text-center">
+            ¿Quieres realizar una donación?
+          </h4>
+          <p class="text-center">¡Gracias por ayudar!</p>
+          <form id="donacion">
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-hand-holding-usd"></i>
+                </span>
+              </div>
+              <select class="form-control" id="tipo-donacion">
+                <option selected="">¿Qué deseas donar?</option>
+                <option>Ropa</option>
+                <option>Comida</option>
+                <option>Dinero</option>
+                <option>Otros</option>
+              </select>
+              
+            </div>
+          </form>
+          
+          <label class="incorrect" id="lbl-incorrect" hidden
+            >Asegúrate de llenar todos los campos correctamente</label
+          >    
+<!--             <div class = "form-group input-group" id="payment-options" style="display: none;">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-money-bill-wave"></i>
+                </span>
+              </div>
+              <select class="form-control" id="modo-pago">
+                <option selected="def" value="">¿Qué modalidad prefieres?</option>
+                <option value="def">Directamente con el beneficiario</option>
+                <option >Pago online inmediato</option>
+              </select>
+            </div> -->
+
+          <button type="button" id="donarbtn" class="btn btn-primary btn-block">
+            Donar
+          </button>
+        </article>
+        
+        <div id="paypal-button-container" style="display: none;" class="text-center"></div>
+      </div>
+    </section>
+
+    <!-- MAPAS -->
+    <section class="showcase" id="maps" hidden>
+      <div class="container-fluid p-0">
+        <div class="row no-gutters mt-5" id="mapa-organizaciones">
+          <div
+            class="col-12 col-lg-6 order-2 order-lg-1 text-white showcase-img"
+          >
+            <div id="organizationMap"></div>
+          </div>
+          <div class="col-lg-6 order-1 order-lg-2 my-auto showcase-text">
+            <h2>Conoce a las fundaciones a las que puedes donar</h2>
+            <p class="lead mb-0 d-none d-lg-block">
+              En este mapa puedes encontrar las diferentes fundaciones a las que puedes donar!
+            </p>
+          </div>
+        </div>
+        <div class="row no-gutters" id="mapa-personas">
+          <div class="col-lg-6 order-2 text-white showcase-img">
+            <div id="peopleMap"></div>
+          </div>
+          <div class="col-lg-6 order-1 my-auto showcase-text">
+            <h2>Conoce a las personas a las que puedes ayudar</h2>
+            <p class="lead mb-0 d-none d-lg-block">
+              Aqui puedes encontrar a las personas reportadas que necesitan ayuda
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reporte personas -->
+
+    <section id="report">
+      <a name="Report"></a>
+      <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px"">
+            <h4 class="card-title mt-3 text-center">Reporta personas que necesiten ayuda</h4></a
+          >
+          <form id="reporte">
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input
+                name=""
+                class="form-control"
+                placeholder="¿Cuantos adultos hay?"
+                type="number"
+                min="0"
+              />
+            </div>
+            <!-- form-group// -->
+
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input
+                name=""
+                class="form-control"
+                placeholder="¿Cuantos niños hay?"
+                type="number"
+                min="0"
+              />
+            </div>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fas fa-user-friends"></i>
+                </span>
+              </div>
+              <label class="label-form">¿Que necesitan?</label>
+            </div>
+            <div class="form-group input-group">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkRopa">
+                <label class="custom-control-label" for="checkRopa">Ropa</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkComida">
+                <label class="custom-control-label" for="checkComida">Comida</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="checkOtros">
+                <label class="custom-control-label" for="checkOtros">Otros</label>
+              </div>
+              <div class="custom-control mt-3" id="divReportComida" hidden>
+                <div class="input-group-prepend">
+                  <span class="input-group-text">
+                    <i class="fas fa-utensils"></i>
+                  </span>
+                  <select class="form-control" id="tipo-comida" required>
+                    <option selected="" value="">¿Qué tipo de comida es?</option>
+                    <option>Lista para consumir</option>
+                    <option>Requiere preparación</option>
+                    <option>Cualquiera</option>
+                  </select>
+                </div>
+              </div>
+              <div class="custom-control mt-3" id="divOtros" hidden>
+                <textarea name="" id="" cols="30" rows="10" placeholder="¿Que necesitan?"></textarea>
+
+              </div>
+            </div>
+            <!-- form-group end.// -->
+            <div class="form-group text-center">
+              <p>Donde los podemos ubicar?</p>
+            </div>
+            <div class="form-group">
+              <div id="map"></div>
+              <button class="btn btn-primary btn-block">Reportar!</button>
+            </div>
+            
+            <!-- form-group// -->
+          </form>
+        </article>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="footer bg-dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
+            <ul class="list-inline mb-2">
+              <li class="list-inline-item">
+                <a href="#">About</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Contact</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Terms of Use</a>
+              </li>
+              <li class="list-inline-item">&sdot;</li>
+              <li class="list-inline-item">
+                <a href="#">Privacy Policy</a>
+              </li>
+            </ul>
+            <p class="text-muted small mb-4 mb-lg-0">
+              &copy; Desarrollado por el equipo 3 del curso programación con
+              tecnologías web, sección 1, semestre 2020-20.
+            </p>
+          </div>
+          <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
+            <ul class="list-inline mb-0">
+              <li class="list-inline-item mr-3">
+                <a
+                  href="https://github.com/isis3710-uniandes/202020_S1_E3/tree/master/Entrega2"
+                >
+                  <i class="fab fa-github fa-2x fa-fw"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a
+                  href="https://www.youtube.com/watch?v=Mm_94q5AfJg&feature=youtu.be"
+                >
+                  <i class="fab fa-youtube fa-2x fa-fw"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="./js/app.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnpwgQdxEq3I_zF_yoI1wTn8vY8arbUUI&callback=initMap"
+    ></script>
+    <script
+    src="https://www.paypal.com/sdk/js?client-id=AWAFjP7K2VTzuXqsc1hzN6AXcD2g962AOWkbjKU6FPtT1Tk3pWSKy4TxcwmN4oiulX_mjocaSZRqJKAk"> // Required. Replace SB_CLIENT_ID with your sandbox client ID.
+  </script>
+  <script>
+    paypal.Buttons().render('#paypal-button-container');
+    // This function displays Smart Payment Buttons on your web page.
+  </script>
+  <script>
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        // This function sets up the details of the transaction, including the amount and line item details.
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '0.01'
+            }
+          }]
+        });
+      }
+    });
+  </script>
+  <script>
+    paypal.Buttons({
+      createOrder: function(data, actions) {
+        // This function sets up the details of the transaction, including the amount and line item details.
+        return actions.order.create({
+          purchase_units: [{
+            amount: {
+              value: '0.01'
+            }
+          }]
+        });
+      },
+      onApprove: function(data, actions) {
+        // This function captures the funds from the transaction.
+        return actions.order.capture().then(function(details) {
+          // This function shows a transaction success message to your buyer.
+          alert('Transaction completed by ' + details.payer.name.given_name);
+        });
+      }
+    });
+    //This function displays Smart Payment Buttons on your web page.
+  </script>
+  </body>
+</html>

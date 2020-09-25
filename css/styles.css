@@ -1,0 +1,199 @@
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+p,
+div {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
+}
+.nav-menu {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* padding-right: 20%; */
+}
+
+.nav-menu li {
+  float: left;
+  margin: 10px;
+}
+
+.nav-menu a:link,
+.nav-menu a:visited,
+.nav-menu a:hover,
+.nav-menu a:active {
+  color: #212529;
+}
+
+header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("../img/MASTER\ HEAD\ IMG.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+#register {
+  margin-top: 1%;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon img {
+  text-align: center;
+  width: 70%;
+  padding-left: 30%;
+}
+
+iframe {
+  size: 20%;
+}
+
+.testimonials {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.testimonials .testimonial-item {
+  max-width: 18rem;
+}
+
+.testimonials .testimonial-item img {
+  max-width: 12rem;
+  box-shadow: 0px 5px 5px 0px #adb5bd;
+}
+
+footer.footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.login-container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 28%;
+  text-align: center;
+}
+.login-form-1 {
+  padding: 5%;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+}
+.login-form-1 h3 {
+  text-align: center;
+  color: #333;
+}
+.login-container form {
+  padding: 10%;
+}
+
+.login-form-1 .btnSubmit {
+  font-weight: 600;
+  color: #fff;
+}
+
+.login-form-1 .ForgetPwd {
+  color: #0062cc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.custom-checkbox {
+  margin-left: 50px;
+}
+
+.label-form {
+  margin-left: 10px;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+#peopleMap {
+  height: 400px;
+  width: 100%;
+}
+
+#organizationMap {
+  height: 400px;
+  width: 100%;
+}
+.user-logo {
+  width: 20px;
+  height: auto;
+  margin-right: 1em;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .float-right-bkp {
+    float: right;
+  }
+}
+
+.incorrect {
+  color: red;
+}
